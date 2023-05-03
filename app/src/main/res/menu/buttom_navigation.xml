@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_popular"
+        android:title="Popular"
+        android:icon="@drawable/ic_popular"/>
+    <item
+        android:id="@+id/item_rank"
+        android:title="Top Rated"
+        android:icon="@drawable/ic_baseline_stars_24"/>
+
+    <item
+        android:id="@+id/item_coming"
+        android:title="Coming Soon"
+        android:icon="@drawable/ic_coming"/>
+
+
+</menu>

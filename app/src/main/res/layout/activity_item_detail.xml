@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemDetail"
+    android:orientation="vertical"
+    android:background="@color/background"
+    >
+
+
+    <ImageView
+        android:id="@+id/img_item_movie"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_tambah"
+        />
+
+    <TextView
+        android:id="@+id/judul_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/text"/>
+
+    <TextView
+        android:id="@+id/star_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        tools:ignore="DuplicateIds"
+        android:textAlignment="textEnd"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/text"/>
+
+
+    <TextView
+        android:id="@+id/overview_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/text"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_play"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="0dp"
+            android:src="@drawable/ic_play"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/iv_hapus"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginBottom="0dp"
+            android:src="@drawable/ic_hapus"
+            android:textColor="@color/black" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

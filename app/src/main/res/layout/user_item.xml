@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_user"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/purple_200"
+    android:layout_marginTop="32dp"
+    android:layout_marginRight="32dp"
+    android:layout_marginLeft="32dp"
+    android:layout_marginBottom="2dp"
+    android:backgroundTint="@color/background"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="100dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        >
+
+        <TextView
+            android:id="@+id/id_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="10dp"
+            android:text="ID"
+            android:textColor="@color/text"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/email_user"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@+id/iv_open"
+            android:layout_toEndOf="@+id/iv_image_string"
+            android:text="Email"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nama_user"
+            android:layout_width="264dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email_user"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@+id/iv_open"
+            android:layout_toEndOf="@+id/iv_image_string"
+            android:text="Nama"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/password_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nama_user"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@+id/iv_open"
+            android:layout_toEndOf="@+id/iv_image_string"
+            android:text="Password"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/iv_open"
+            android:layout_width="59dp"
+            android:layout_height="31dp"
+            android:layout_below="@+id/id_user"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/ic_down"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/iv_image_string"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="59dp"
+            android:layout_height="31dp"
+            android:layout_below="@+id/id_user"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/ic_close"
+            tools:ignore="VectorDrawableCompat" />
+
+        <RelativeLayout
+            android:id="@+id/expand"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/password_user"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/background"
+            android:visibility="gone"
+            tools:ignore="InvalidId" >
+
+            <ImageView
+                android:id="@+id/hapus_user"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="82dp"
+                android:layout_marginTop="8dp"
+                android:tint="#FF0000"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+
+            <ImageView
+                android:id="@+id/edit_user"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="185dp"
+                android:layout_marginTop="8dp"
+                android:tint="#FFA07A"
+                app:srcCompat="@android:drawable/ic_menu_edit" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/expand_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expand"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone"
+            >
+
+            <EditText
+                android:id="@+id/isi_detail_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/white"
+                />
+
+            <EditText
+                android:id="@+id/isi_detail_nama"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/isi_detail_email"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/white"
+                />
+
+            <EditText
+                android:id="@+id/isi_detail_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/isi_detail_nama"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:layout_below="@+id/isi_detail_password"
+                android:id="@+id/tv_edit_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="8dp"
+                android:text="UPDATE"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_below="@+id/isi_detail_password"
+                android:id="@+id/tv_edit_tutup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="50dp"
+                android:layout_toEndOf="@+id/tv_edit_update"
+                android:text="TUTUP"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

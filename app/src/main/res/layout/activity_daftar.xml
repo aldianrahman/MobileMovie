@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".activity.DaftarActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Silahkan Daftar"
+            android:textColor="#000000"
+            android:textSize="28sp" />
+
+        <EditText
+            android:id="@+id/nama_daftar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="Masukan Nama"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/email_daftar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="Masukan Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/password_daftar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="Masukan Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btn_daftar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="@color/background"
+            android:text="Daftar" />
+
+    </LinearLayout>
+
+</RelativeLayout>

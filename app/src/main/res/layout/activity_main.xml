@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
+    tools:context=".activity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_email_view"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="11dp"
+                android:layout_centerHorizontal="true"
+                android:text="Daftar"
+                android:textColor="@color/background"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="0dp">
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vpSlider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/indicator"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                />
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_alignParentTop="true"
+                android:padding="10dip"
+                app:centered="true"
+                app:fillColor="@color/background"
+                app:pageColor="#999999"
+                app:snap="false" />
+
+
+<!--            <com.synnapps.carouselview.CarouselView-->
+<!--                android:id="@+id/carouselView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginLeft="8dp"-->
+<!--                android:layout_marginRight="8dp"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:layout_marginBottom="8dp"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                app:fillColor="@color/white"-->
+<!--                app:pageColor="@color/background"-->
+<!--                app:radius="2dp"-->
+<!--                app:autoPlay="true"-->
+<!--                app:animateOnBoundary="true"-->
+<!--                app:pageTransformer="flow"-->
+<!--                app:slideInterval="4000"-->
+<!--                />-->
+
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fl_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btm_nav"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="170dp"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/btm_nav"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_alignParentBottom="true"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/buttom_navigation" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/sidebar_nav"
+        app:headerLayout="@layout/header_nav"
+        />
+
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+
+

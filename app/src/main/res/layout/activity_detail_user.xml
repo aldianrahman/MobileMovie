@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DetailUserActivity">
+
+    <ImageView
+        android:id="@+id/prof_pic_detail"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/prof_detail_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prof_pic_detail"
+        tools:ignore="InvalidId,UnknownId"
+        android:layout_centerHorizontal="true"
+        android:text="Email"
+        android:textStyle="bold"
+        android:textColor="@color/background"
+        android:textSize="20dp"
+        android:layout_marginTop="8dp"
+        />
+    <TextView
+        android:id="@+id/prof_detail_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prof_detail_email"
+        tools:ignore="UnknownId"
+        android:layout_centerHorizontal="true"
+        android:text="Nama"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/background"
+        android:layout_marginTop="8dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/rl_rv_watch"
+        android:layout_marginLeft="8dp"
+        android:layout_below="@+id/prof_detail_nama"
+        android:layout_width="190dp"
+        android:layout_height="match_parent"
+        tools:ignore="UnknownId"
+        android:layout_marginTop="16dp"
+        android:background="@color/text"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/rv_watchlist_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Watchlist"
+            android:textColor="@color/white"
+            android:background="@color/background"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_detail_watch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rv_watchlist_detail"
+            tools:listitem="@layout/watchlist_item"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/rv_favorite_detail"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="270dp"
+        android:layout_toEndOf="@+id/rl_rv_watch"
+        android:layout_weight="1"
+        android:background="@color/background"
+        android:text="Favorite"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/rl_rv_fav"
+        android:layout_width="190dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rv_favorite_detail"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toEndOf="@+id/rl_rv_watch"
+        android:background="@color/text"
+        tools:ignore="UnknownId">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_detail_fav"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/favorite_item"
+
+            />
+    </LinearLayout>
+</RelativeLayout>

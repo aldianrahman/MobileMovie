@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/header_nav"
+    android:layout_height="192dp"
+    android:background="@color/teal_700"
+    android:padding="24dp"
+    android:backgroundTint="@color/background"
+    tools:ignore="InvalidId">
+
+    <TextView
+        android:id="@+id/tv_count_favorite"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/test_IV"
+        android:text="Favorite : "
+        android:textColor="@color/button" />
+
+    <TextView
+        android:id="@+id/email_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
+        android:text="Email View"
+        android:textAlignment="center"
+        android:textColor="@color/text"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/prof_pic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        app:srcCompat="@drawable/ic_menu_camera"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/tv_count_watchlist"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/test_IV"
+        android:text="Watchlist : "
+        android:textColor="@color/button" />
+
+    <ImageView
+        android:id="@+id/test_IV"
+        android:layout_width="120dp"
+        android:layout_height="88dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/btn_usephoto"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="8dp"
+        android:layout_below="@+id/test_IV"
+        android:text="Use Picture" />
+
+    <ImageView
+        android:id="@+id/img_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-25dp"
+        android:layout_toEndOf="@+id/test_IV"
+        app:srcCompat="@drawable/ic_cancel"
+        tools:ignore="VectorDrawableCompat" />
+
+</RelativeLayout>

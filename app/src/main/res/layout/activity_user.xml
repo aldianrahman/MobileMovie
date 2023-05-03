@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.UserActivity">
+
+    <ImageView
+        android:id="@+id/string_bitmap"
+        android:layout_width="190dp"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:src="@drawable/ic_menu_camera" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Id textView"
+            android:textSize="25dp"
+            android:layout_marginTop="4dp"
+            android:id="@+id/id_tampil"
+            android:layout_marginHorizontal="8dp"
+            android:textColor="@color/background"
+            />
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name textView"
+        android:textSize="25dp"
+        android:layout_marginTop="4dp"
+        android:id="@+id/email_tampil"
+        android:layout_marginHorizontal="8dp"
+        android:textColor="@color/background"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Age textView"
+        android:textSize="25dp"
+        android:layout_marginTop="4dp"
+        android:id="@+id/password_tampil"
+        android:layout_marginHorizontal="8dp"
+        android:textColor="@color/background"
+        />
+
+        <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:id="@+id/logout"
+        android:layout_marginHorizontal="8dp"
+
+        />
+
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Go Home"
+            android:layout_marginHorizontal="8dp"
+
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:gravity="center"
+        android:text="Welcome"
+        android:textColor="#000000"
+        android:textSize="28sp" />
+
+</RelativeLayout>
